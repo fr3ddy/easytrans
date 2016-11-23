@@ -1,6 +1,7 @@
 {
     "name": "fr3ddy/easytrans",
     "description": "Easy Translation functionallity with excel import and export",
+    "license": "Apache",
     "authors": [
         {
             "name": "Freddy",
