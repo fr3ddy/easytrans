@@ -9,6 +9,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "maatwebsite/excel": "~2.1.*"
+        "maatwebsite/excel": "2.1.*"
     }
 }
