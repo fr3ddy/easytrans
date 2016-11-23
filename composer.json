@@ -1,0 +1,14 @@
+{
+    "name": "fr3ddy/easytrans",
+    "description": "Easy Translation functionallity with excel import and export",
+    "authors": [
+        {
+            "name": "Freddy",
+            "email": "frey@binaerix.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "maatwebsite/excel": "~2.1.*"
+    }
+}
