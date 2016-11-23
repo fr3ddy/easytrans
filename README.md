@@ -12,5 +12,7 @@ Test it now!
 
 
 # Installation
+add service provider: 
+    Fr3ddy\Easytrans\EasytransServiceProvider::class,
 Check that excel is working.
 and publish config and set "force_sheets_collection" = true

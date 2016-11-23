@@ -1,6 +1,6 @@
 <?php
 
-namespace Fr3ddyF\Easytrans;
+namespace Fr3ddy\Easytrans;
 
 use Illuminate\Support\ServiceProvider;
 
