@@ -9,7 +9,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require-dev": {
+    "require": {
         "maatwebsite/excel": "2.1.*"
     }
 }
