@@ -11,5 +11,12 @@
     "minimum-stability": "dev",
     "require": {
         "maatwebsite/excel": "2.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src"
+        ],
+        "psr-4": {
+        }
     }
 }
