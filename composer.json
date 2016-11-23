@@ -1,6 +1,6 @@
 {
     "name": "fr3ddy/easytrans",
-    "description": "Easy Translation functionallity with excel import and export",
+    "description": "Easy Support for translation. Exporting Excels, translate them and import it after finishing.",
     "license": "Apache",
     "authors": [
         {
