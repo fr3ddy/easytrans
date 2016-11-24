@@ -42,7 +42,8 @@ class ExportCommand extends Command
      */
     public function handle()
     {
-        $base = base_path().'/resources/lang/'.$this->argument('lang');
+        $base = base_path().'/resources/lang/'.$this->argument('lang').'/';
+        $this->info("Searching in ". $base. " for files to export.");
         $paths = \File::files($base);
 
         foreach($paths as $path){
