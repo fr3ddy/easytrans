@@ -53,7 +53,7 @@ Feel free to remove any sheet, it will not be a problem when importing it again.
 ## Import
 By using the following command in your project directoy, the excel file in the storage/easytrans folder will be imported. As the filename I am expecting {lang}.xls
 ```
-php artisan easytrans:export {lang}
+php artisan easytrans:import {lang}
 ```
 
 When importing, backup files are created, and new files are generated for all sheets in this excel based on the name of the sheet.
