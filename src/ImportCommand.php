@@ -63,9 +63,8 @@ class ImportCommand extends Command
                 $language_array = var_export($this->sheet_data,true);
                 $file_content = '<?php
 
-return [
-            '.substr($language_array,7,-1).'
-];';
+return '.$language_array.'
+;';
                 file_put_contents($file,$file_content);
             });
         });
