@@ -5,6 +5,7 @@ namespace Fr3ddy\Easytrans;
 use Illuminate\Console\Command;
 use Excel;
 use Lang;
+use App;
 
 class ExportCommand extends Command
 {
