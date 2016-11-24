@@ -42,6 +42,8 @@ class ExportCommand extends Command
      */
     public function handle()
     {
+        $old_locale = App::getLocale();
+        App::setLocale($this->argument('lang'));
         $base = base_path().'/resources/lang/'.$this->argument('lang').'/';
         $this->info("Searching in ". $base. " for files to export.");
         $paths = \File::files($base);
@@ -137,6 +139,7 @@ class ExportCommand extends Command
             }
 
         })->store('xls', storage_path('easytrans'));
+        App::setLocale($old_locale);
         $this->info('Exported');
     }
 }
