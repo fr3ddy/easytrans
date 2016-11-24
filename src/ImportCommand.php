@@ -48,23 +48,17 @@ class ImportCommand extends Command
                 $this->sheet_data = array();
                 $sheet->each(function($row){
                     $data = $row->toArray();
-                    $key = '';
-                    if($data['key_1'] != ''){
-                        $key = $data['key_1'];
-                        if($data['key_2'] != ''){
-                            $key .= '.'.$data['key_2'];
-                            if($data['key_3'] != ''){
-                                $key .= '.'.$data['key_3'];
-                                if($data['key_4']){
-                                    $key .= '.'.$data['key_4'];
-                                    if($data['key_5']){
-                                        $key .= '.'.$data['key_5'];
-                                    }
-                                }
-                            }
-                        }
+                    if($data['key_1'] != '' && $data['key_2'] != '' && $data['key_3'] != '' && $data['key_4'] != '' && $data['key_5'] != ''){
+                        $this->sheet_data[$data['key_1']][$data['key_2']][$data['key_3']][$data['key_4']][$data['key_5']] = $data['value'];
+                    }elseif($data['key_1'] != '' && $data['key_2'] != '' && $data['key_3'] != '' && $data['key_4'] != ''){
+                        $this->sheet_data[$data['key_1']][$data['key_2']][$data['key_3']][$data['key_4']] = $data['value'];
+                    }elseif($data['key_1'] != '' && $data['key_2'] != '' && $data['key_3'] != ''){
+                        $this->sheet_data[$data['key_1']][$data['key_2']][$data['key_3']] = $data['value'];
+                    }elseif($data['key_1'] != '' && $data['key_2'] != ''){
+                        $this->sheet_data[$data['key_1']][$data['key_2']] = $data['value'];
+                    }elseif($data['key_1']){
+                        $this->sheet_data[$data['key_1']] = $data['value'];
                     }
-                    $this->sheet_data[$key] = $data['value'];
                 });
                 $language_array = var_export($this->sheet_data,true);
                 $file_content = '<?php
