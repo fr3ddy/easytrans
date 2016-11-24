@@ -1,3 +1,10 @@
+[![Latest Stable Version](https://poser.pugx.org/fr3ddy/easytrans/v/stable)](https://packagist.org/packages/fr3ddy/easytrans)
+[![Total Downloads](https://poser.pugx.org/fr3ddy/easytrans/downloads)](https://packagist.org/packages/fr3ddy/easytrans)
+[![Latest Unstable Version](https://poser.pugx.org/fr3ddy/easytrans/v/unstable)](https://packagist.org/packages/fr3ddy/easytrans)
+[![License](https://poser.pugx.org/fr3ddy/easytrans/license)](https://packagist.org/packages/fr3ddy/easytrans)
+[![Monthly Downloads](https://poser.pugx.org/fr3ddy/easytrans/d/monthly)](https://packagist.org/packages/fr3ddy/easytrans)
+[![Daily Downloads](https://poser.pugx.org/fr3ddy/easytrans/d/daily)](https://packagist.org/packages/fr3ddy/easytrans)
+
 # Easytrans
 
 !ALPHA RELEASE!
@@ -9,7 +16,6 @@ Export Excel files, translate it and import it again.
 It's as easy as it sounds...
 
 Test it now!
-
 
 # Installation
 Require this package with composer
